@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GIS学习网站</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	  <script type="text/javascript" src="../js/page.js"></script>
+</head>
+<body onLoad="goPage(1);">
+	<div id="layout">
+		<div id="head_include">
+			<div class="headLogin">
+				<div class="block_body">
+					<div class="image-top"><img src="../image/1.png" ></div>
+          <div class="wel"><p>GIS软件工程网络课程</p></div>
+					<div id="newLoginDiv">
+						<div id="login_hasUserClickLoginButton_newLogin" style="display: none"></div>
+						<form onsubmit="newLogin();return false;" id="newLoginFormRender" method="post">
+							<div class="login">
+                <a href="../index.html" class="bz">首页</a>
+								<a href="../Login.html" class="bz" >登录</a>
+								<a href="../regist.html" class="bz" >注册</a>
+								<a href="../help.html" >帮助</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+ <!--    <div id="head-nav" class="head-nav">
+    	<div class="row1">
+    		<ul class="header-nav-list">
+    			<li class="header-nav-list-i pull-left"><a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+    			<li class="header-nav-list-i pull-left"><a href="#">课程中心</a></li>
+    			<li class="header-nav-list-i pull-left"><a href="#">资源推荐</a></li>
+                <div class="blanks"></div>
+    		</ul>
+    	</div>
+    </div> -->
+    <div id="Contents">
+        <div class="ContentsNav">
+            <div class="ContentsNav_head"><span>资源类型</span></div>
+            <ul>
+                <li><a href="source.html" >教学课件</a></li>
+                <li><a href="lessonplan.html" class="Lichange">电子教案</a></li>
+                <li><a href="example.html">例题习题</a></li>
+                <li><a href="document.html">文献资料</a></li>
+                <li><a href="coursevideo.html">教学录像</a></li>
+                <li><a href="casestudy.html">教学案例</a></li>
+                <li><a href="testpaper.html">试卷</a></li>
+                <div class="blanks"></div>
+            </ul>
+        </div>
+        <div class="ContentsDiv">
+           <div class="results">
+            <span>电子教案---搜索结果(10)：</span>
+           </div>
+           <div class="lists" id="idData">
+               <div class="border">
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       <tbody>
+                           <tr>
+                               <td rowspan="3" class="td1">
+                                   <a href="#"><img src="http://img2.jingpinke.com/cover/resource/ff808081-25beb32e-0125-beb5c6b2-065f"></a>
+                               </td>
+                               <th colspan="2">
+                                   <a href="#">GIS软件工程</a>
+                               </th>
+                               <td class="td2">2009-10-16</td>
+                           </tr>
+                           <tr>
+                               <td class="bg">作者：邵红</td>
+                               <td colspan="2" class="bg">单位：中国地质大学</td>
+                           </tr>
+                           <tr>
+                               <td class="td3 bg">媒体类型:pdf</td>
+                               <td class="td3 bg">资源类型：电子教案</td>
+                               <td class="td3 bg">
+                                   资源大小：8117
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="border">
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       <tbody>
+                           <tr>
+                               <td rowspan="3" class="td1">
+                                   <a href="#"><img src="http://img2.jingpinke.com/cover/resource/ff808081-25beb32e-0125-beb5c6b2-065f"></a>
+                               </td>
+                               <th colspan="2">
+                                   <a href="#">GIS软件工程</a>
+                               </th>
+                               <td class="td2">2009-10-16</td>
+                           </tr>
+                           <tr>
+                               <td class="bg">作者：邵红</td>
+                               <td colspan="2" class="bg">单位：中国地质大学</td>
+                           </tr>
+                           <tr>
+                               <td class="td3 bg">媒体类型:pdf</td>
+                               <td class="td3 bg">资源类型：电子教案</td>
+                               <td class="td3 bg">
+                                   资源大小：8117
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="border">
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       <tbody>
+                           <tr>
+                               <td rowspan="3" class="td1">
+                                   <a href="#"><img src="http://img2.jingpinke.com/cover/resource/ff808081-25beb32e-0125-beb5c6b2-065f"></a>
+                               </td>
+                               <th colspan="2">
+                                   <a href="#">GIS软件工程</a>
+                               </th>
+                               <td class="td2">2009-10-16</td>
+                           </tr>
+                           <tr>
+                               <td class="bg">作者：邵红</td>
+                               <td colspan="2" class="bg">单位：中国地质大学</td>
+                           </tr>
+                           <tr>
+                               <td class="td3 bg">媒体类型:pdf</td>
+                               <td class="td3 bg">资源类型：电子教案</td>
+                               <td class="td3 bg">
+                                   资源大小：8117
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="border">
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       <tbody>
+                           <tr>
+                               <td rowspan="3" class="td1">
+                                   <a href="#"><img src="http://img2.jingpinke.com/cover/resource/ff808081-25beb32e-0125-beb5c6b2-065f"></a>
+                               </td>
+                               <th colspan="2">
+                                   <a href="#">GIS软件工程</a>
+                               </th>
+                               <td class="td2">2009-10-16</td>
+                           </tr>
+                           <tr>
+                               <td class="bg">作者：邵红</td>
+                               <td colspan="2" class="bg">单位：中国地质大学</td>
+                           </tr>
+                           <tr>
+                               <td class="td3 bg">媒体类型:pdf</td>
+                               <td class="td3 bg">资源类型：电子教案</td>
+                               <td class="td3 bg">
+                                   资源大小：8117
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="border">
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       <tbody>
+                           <tr>
+                               <td rowspan="3" class="td1">
+                                   <a href="#"><img src="http://img2.jingpinke.com/cover/resource/ff808081-25beb32e-0125-beb5c6b2-065f"></a>
+                               </td>
+                               <th colspan="2">
+                                   <a href="#">GIS软件工程</a>
+                               </th>
+                               <td class="td2">2009-10-16</td>
+                           </tr>
+                           <tr>
+                               <td class="bg">作者：邵红</td>
+                               <td colspan="2" class="bg">单位：中国地质大学</td>
+                           </tr>
+                           <tr>
+                               <td class="td3 bg">媒体类型:pdf</td>
+                               <td class="td3 bg">资源类型：电子教案</td>
+                               <td class="td3 bg">
+                                   资源大小：8117
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="border">
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       <tbody>
+                           <tr>
+                               <td rowspan="3" class="td1">
+                                   <a href="#"><img src="http://img2.jingpinke.com/cover/resource/ff808081-25beb32e-0125-beb5c6b2-065f"></a>
+                               </td>
+                               <th colspan="2">
+                                   <a href="#">GIS软件工程</a>
+                               </th>
+                               <td class="td2">2009-10-16</td>
+                           </tr>
+                           <tr>
+                               <td class="bg">作者：邵红</td>
+                               <td colspan="2" class="bg">单位：中国地质大学</td>
+                           </tr>
+                           <tr>
+                               <td class="td3 bg">媒体类型:pdf</td>
+                               <td class="td3 bg">资源类型：电子教案</td>
+                               <td class="td3 bg">
+                                   资源大小：8117
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="border">
+                   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       <tbody>
+                           <tr>
+                               <td rowspan="3" class="td1">
+                                   <a href="#"><img src="http://img2.jingpinke.com/cover/resource/ff808081-25beb32e-0125-beb5c6b2-065f"></a>
+                               </td>
+                               <th colspan="2">
+                                   <a href="#">GIS软件工程</a>
+                               </th>
+                               <td class="td2">2009-10-16</td>
+                           </tr>
+                           <tr>
+                               <td class="bg">作者：邵红</td>
+                               <td colspan="2" class="bg">单位：中国地质大学</td>
+                           </tr>
+                           <tr>
+                               <td class="td3 bg">媒体类型:pdf</td>
+                               <td class="td3 bg">资源类型：电子教案</td>
+                               <td class="td3 bg">
+                                   资源大小：8117
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+           </div>
+           <table width="80%" align="left"  class="table1">
+            <tr><td><div id="barcon" name="barcon"></div></td></tr>
+        </table>
+        </div>
+    </div>
+        <!-- <div class="u-showall" id="s0102">
+             <div class="upline"></div>
+             <div class="dnline"></div>
+             <div class="dnbtn">
+               <div class="btncenter" id="read-more">
+                   查看更多
+               </div>
+             </div>
+    </div> -->
+    <div id="footerContent">
+    	<div class="footer_include">
+    		<div class="footer">
+    			<span style="padding-right:30px; ">主办单位：中国地质大学信工学院</span>技术支持：信工学院307办公室<br>
+    			<span style="padding-right: 40px;">Copyright &copy; 2018</span>工信局备案：鄂xxxxxxxxxx
+    		</div>
+    	</div>
+    </div>
+    <script type="text/javascript" src="../js/load.js"></script>
+</body>
+</html>
