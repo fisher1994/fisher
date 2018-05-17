@@ -2,7 +2,7 @@ function goPage(pno){
     var itable = document.getElementById("idData").getElementsByTagName('div');
     var num = itable.length;//表格所有行数(所有记录数)
     var totalPage = 0;//总页数
-    var pageSize = 5;//每页显示行数
+    var pageSize = 10;//每页显示行数
     //总共分几页
     if(num/pageSize > parseInt(num/pageSize)){
         totalPage=parseInt(num/pageSize)+1;

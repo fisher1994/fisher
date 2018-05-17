@@ -1,0 +1,94 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb_2312-80">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>406</title>
+<meta NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</head>
+
+<body LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff" alink="#ff0000">
+
+<table CELLSPACING="0" BORDER="0" WIDTH="696">
+  <tr>
+    <td WIDTH="19%" VALIGN="TOP" ROWSPAN="3" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><img
+    SRC="uestc.jpg" WIDTH="128" HEIGHT="124"></font><a NAME="HEADING1_0"></td>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="86"></td>
+    <td WIDTH="80%" VALIGN="MIDDLE" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><hr>
+    <strong><h1 ALIGN="CENTER">第四章 设计方法</h1>
+    </strong><hr>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="552"></td>
+    <td WIDTH="80%" VALIGN="TOP" HEIGHT="552"><b><font FACE="System" LANG="ZH-CN">4</font><font
+    FACE="黑体" LANG="ZH-CN" SIZE="5">.</font><font FACE="System" LANG="ZH-CN">5</font><font
+    FACE="宋体" LANG="ZH-CN">&nbsp; 医院病人监护系统<dir>
+      <p>1. 需求分析</p>
+    </dir>
+    <ul>
+      <ul>
+        <li>每张病床有专门设备监视病人的脉搏、体温、血压、呼吸等七项指标（因素），系统定期读入上述因素并与设定的允许值范围比较，若发现有因素值超标则报告病人号，如果是设备故障则报告床位号； 
+        </li>
+        <li>数据流图：本系统只是数据采集和分析系统，没有主加工。</li>
+      </ul>
+    </ul>
+    <dir>
+      <dir>
+        <dir>
+          </font></b><font FACE="System" LANG="ZH-CN"><p ALIGN="CENTER"><img SRC="病人监护.gif"
+          WIDTH="404" HEIGHT="211"></p>
+        </dir>
+      </dir>
+      </font><font FACE="宋体" LANG="ZH-CN"><b><p>2. 
+      用变换分析方法设计模块结构图：</p>
+    </dir>
+    <ul>
+      <ul>
+        <li>顶层和一层：</li>
+      </ul>
+    </ul>
+    <dir>
+      <dir>
+        <dir>
+          </b></font><font FACE="System" LANG="ZH-CN"><p><img SRC="监护系统.gif" WIDTH="378"
+          HEIGHT="145"></p>
+        </dir>
+      </dir>
+    </dir>
+    <ul>
+      <ul>
+        </font><b><font FACE="宋体" LANG="ZH-CN">
+        <li>二层及以下：没有严格按照变换分析方法得到的结果（图4.20）</li>
+      </ul>
+    </ul>
+    <dir>
+      <p>3.</font><font FACE="黑体" LANG="ZH-CN"> </font><font FACE="宋体" LANG="ZH-CN">设计技巧：<dir>
+        <p>(1) 消除不必要的参数传递，减小块间联系；（图4.21、4.22、4.32） </p>
+        <p>(2) 合并管道模块；（图4.23） </p>
+        <p>(3) 移动模块以减小块间联系；（图4.26）</p>
+        <p>(4) 将重复功能抽出来形成新的下层模块；（图4.27）</p>
+        <p>(5) 模块的大小适度；（图4.28）</p>
+        <p>(6) 新增模块，理由同(1)；（图4.29）</p>
+        <p>(7) 其他考虑；（图4.30、4.31、4.33）</p>
+      </dir>
+      <p>4．两点补充：<dir>
+        <p>(8) 作用范围与控制范围： 
+        模块的影响所及应处于以模块为根节点的子树中； </p>
+        <p>(9) 扇入和扇出： 
+        模块被调用次数（扇入）越多，说明模块的复用性越好；模块调用其他模块（扇出）越少，模块的复杂性越小。 
+        </font></b></p>
+      </dir>
+    </dir>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="81%" VALIGN="TOP" COLSPAN="2"><font FACE="System" LANG="ZH-CN"><p
+    ALIGN="CENTER"></font></a><a HREF="405.html"><img SRC="leftarrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a><a HREF="index.htm"><img SRC="uparrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a><a HREF="407.html"><img SRC="rightarrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a></td>
+  </tr>
+</table>
+</body>
+</html>

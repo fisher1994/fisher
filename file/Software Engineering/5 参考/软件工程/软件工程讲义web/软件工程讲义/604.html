@@ -1,0 +1,192 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb_2312-80">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<meta NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+<title>604</title>
+</head>
+
+<body LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff" alink="#ff0000">
+
+<table CELLSPACING="0" BORDER="0" WIDTH="696">
+  <tr>
+    <td WIDTH="19%" VALIGN="TOP" ROWSPAN="3" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><img
+    SRC="uestc.jpg" WIDTH="132" HEIGHT="134"></font><a
+    NAME="HEADING1_0"></td>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="86"></td>
+    <td WIDTH="80%" VALIGN="MIDDLE" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><hr>
+    <strong><h1 ALIGN="CENTER">第六章 检验与测试</h1>
+    </strong><hr>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="552"></td>
+    <td WIDTH="80%" VALIGN="TOP" HEIGHT="552"></a><b><a NAME="HEADING1_0"><font FACE="System"
+    LANG="ZH-CN">6</font><font FACE="黑体" LANG="ZH-CN" SIZE="5">.</font><font face="System"
+    lang="ZH-CN">6</font><font FACE="黑体" LANG="ZH-CN"> </font><font FACE="宋体"
+    LANG="ZH-CN">测试步骤<blockquote>
+      <p>测试过程通常可以分三步进行：</p>
+    </blockquote>
+    <ul>
+      <ul>
+        <li></a>模块测试（白、黑盒法）：可以发现详细设计和编程时的错误；<a
+          NAME="HEADING1_0"></li>
+        <li></a>联合测试（黑盒法）：可以发现概要设计中的错误，如模块界面上的问题等；</font></b><a
+          NAME="HEADING1_0"><b><font FACE="宋体" LANG="ZH-CN"></li>
+        </font></b>
+        <li></a><font face="宋体" lang="ZH-CN"><b>系统测试（评审，黑盒法）：可以发现设计和分析阶段的错误。</b></font><a
+          NAME="HEADING1_0"></li>
+      </ul>
+    </ul>
+    <p><b><font FACE="System" LANG="ZH-CN">6</font><font FACE="黑体" LANG="ZH-CN" SIZE="5">.</font><font
+    face="System" lang="ZH-CN">7</font><font FACE="黑体" LANG="ZH-CN"> </font><font
+    face="宋体" lang="ZH-CN">联合测试</font></b></p>
+    </a><blockquote>
+      <font FACE="宋体" LANG="ZH-CN"><a NAME="HEADING1_0"><b><p>联合测试通常采用两种方式：</p>
+      </b></a></font>
+    </blockquote>
+    <font FACE="宋体" LANG="ZH-CN"><b><a NAME="HEADING1_0"><ul>
+      <ul>
+        <li></a>渐增式：在已测试过的N个模块的基础上再增加一个模块，再对新增的模块进行测试。渐增式又有“由顶向下”、“由底向上”两种，用渐增方式时模块测试和联合测试这两步是合并进行的。<a
+          NAME="HEADING1_0"></li>
+        </b></font>
+        <li></a><font face="宋体" lang="ZH-CN"><b>非渐增式：先独立地测试每一模块（即模块测试），然后将所有这些模块连接到一起运行和逐个测试。</b></font><a
+          NAME="HEADING1_0"></li>
+      </ul>
+    </ul>
+    </a><blockquote>
+      <p><font face="宋体" lang="ZH-CN"><b>两种方式的比较：</b></font><a
+      NAME="HEADING1_0"></p>
+      </a>
+    </blockquote>
+    <blockquote>
+      <p><font face="宋体" lang="ZH-CN"><b>1）非渐增式需准备驱动模块和桩模块，渐增式可利用前面已测试过的模块，不必另外准备驱动模块（由顶向下）或桩模块（由底向上）。</b></font></p>
+      <p><font face="宋体" lang="ZH-CN"><b>2）渐增式可以较早地发现模块界面之间的错误。</b></font></p>
+      <p><font face="宋体" lang="ZH-CN"><b>3）渐增式有利于排错，非渐增式很难判断错误发生在程序的哪一部分。</b></font></p>
+      <p><font face="宋体" lang="ZH-CN"><b>4）渐增式比较彻底，渐增式以前面测试过的模块作为驱动模块或桩模块，所以这些模块将利到进一步的检查。</b></font></p>
+      <p><font face="宋体" lang="ZH-CN"><b>结论：渐增式比非渐增式优越。</b></font></p>
+    </blockquote>
+    <blockquote>
+      <font FACE="宋体" LANG="ZH-CN"><b><a NAME="HEADING1_0"><p></a>渐增式<a
+      NAME="HEADING1_0">联合测试通常采用</a>由顶向下和由底向上<a
+      NAME="HEADING1_0">两种方式：</p>
+      </a></b></font>
+    </blockquote>
+    <font FACE="宋体" LANG="ZH-CN"><b><a NAME="HEADING1_0"><ul>
+      <li></a>由顶向下测试：<a NAME="HEADING1_0"></li>
+      <ul>
+        </b></font>
+        <li></a><font FACE="宋体" LANG="ZH-CN"><b><a NAME="HEADING1_0">由顶向下渐增式首先测试顶模块（主模块），下一个被测试模块的的入选条件是：该模块的调用模块中至少有一个已测试过了。</a></b></font><a
+          NAME="HEADING1_0"></li>
+        <li></a><a NAME="HEADING1_0"><font FACE="宋体" LANG="ZH-CN"><b>测试数据由某个（或几个）桩模块提供给它，工作结果也需要由某个（或几个）桩模块输出。</b></font></a><a
+          NAME="HEADING1_0"></li>
+      </ul>
+      <li><font face="宋体" lang="ZH-CN"><b>由顶向下方式的缺点：</b></font></a><a
+        NAME="HEADING1_0"></li>
+    </ul>
+    </a><ul>
+      <a NAME="HEADING1_0"><font FACE="宋体" LANG="ZH-CN"><b><ul>
+        </b></font>
+        <li></a><font face="宋体" lang="ZH-CN"><a NAME="HEADING1_0"><b>桩模块的编写比较复杂；</b></a></font><a
+          NAME="HEADING1_0"></li>
+        <li></a><a NAME="HEADING1_0"><font FACE="宋体" LANG="ZH-CN"><b>在测试模块H时（以图6．16为例），由于H离输入点J很远，要决定从J输入什么数据，才能使模块H得到设计的测试用例是极困难的；输出模块与被测试的模块也可能距离较远，要由输出结果分析被测试模块的工作情况也是困难的。</b></font></a><a
+          NAME="HEADING1_0"></li>
+      </ul>
+      <li><font face="宋体" lang="ZH-CN"><b>由顶向下方式</a>的测试顺序：</b></font><a
+        NAME="HEADING1_0"></li>
+      </a><ul>
+        <a NAME="HEADING1_0">
+        <li></a><font FACE="宋体" LANG="ZH-CN"><b>尽早测试包含输入输出操作的模块</b></font><a
+          NAME="HEADING1_0"></li>
+        </a>
+        <li><font FACE="宋体" LANG="ZH-CN"><b>尽早测试关键的模块</b></font></li>
+      </ul>
+      <li><font face="宋体" lang="ZH-CN"><b>由底向上测试：</b></font></li>
+      <ul>
+        <li><font face="宋体" lang="ZH-CN"><b>由底向上渐增式首先测试最底层的模块，<a
+          NAME="HEADING1_0">下一个被测试模块的的入选条件是：</a>该模块的所有下层模块都已测试过了。</b></font></li>
+        <li><font face="宋体" lang="ZH-CN"><b>用由底向上方式测试时，需要为每个模块准备一个驱动模块，它的作用是调用被测试的模块，设置输入参数、显示输出结果（或将实际输出与预期的输出作比较）。</b></font></li>
+      </ul>
+      <li><font face="宋体" lang="ZH-CN"><a NAME="HEADING1_0"><b>由底向上方式的特点：</b></a></font></li>
+      <ul>
+        <li><font face="宋体" lang="ZH-CN"><b>编写驱动模块比编写桩模块容易，可以用工具来实现。</b></font></li>
+        <li><font face="宋体" lang="ZH-CN"><b>驱动模块直接与被测试模块联系，所以不必担心有其他模块介入的问题。</b></font></li>
+        <li><font face="宋体" lang="ZH-CN"><b>由底向上方式不能像由顶向下方式那样在测试中途获得一个程序框架。</b></font></li>
+      </ul>
+    </ul>
+    <ul>
+      <li><font face="宋体" lang="ZH-CN"><b>两种方式应该结合起来使用。</b></font></li>
+      <p>　</p>
+    </ul>
+    <a NAME="HEADING1_0"><font FACE="宋体" LANG="ZH-CN"><b><p>6．8 系统测试：</b></font><ul>
+      <li><font face="宋体" lang="ZH-CN"><b>系统测试是把软件、硬件和环境结合起来作全面的测试。系统测试的主要内容包括：</b></font></li>
+    </ul>
+    <blockquote>
+      <p></a><font face="宋体" lang="ZH-CN"><b>1）功能测试</b></font><a NAME="HEADING1_0"></p>
+      <p><font face="宋体" lang="ZH-CN"><b>2）容量测试</b></font></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>3）紧张度测试</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>4）使用性测试</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>5）安全性测试</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>6）性能测试</b></font><a NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>7）可靠性测试</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>8）恢复测试</b></font><a NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>9）文档测试</b></font><a NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>10）工序测试</b></font><a
+      NAME="HEADING1_0"></p>
+    </blockquote>
+    <p><font face="宋体" lang="ZH-CN"><b>6．9 测试计划</b></font></p>
+    <blockquote>
+      <p><font face="宋体" lang="ZH-CN"><b>在软件开发过程中，我们用一半精力设计和编写程序，用另一半精力检查程序中的错误。</b></font></p>
+      <p><font face="宋体" lang="ZH-CN"><b>测试之前必须制订一个计划，测试计划包括以下内容：</b></font></p>
+    </blockquote>
+    <blockquote>
+      <p><font face="宋体" lang="ZH-CN"><b>1）每个测试阶段的目的；</b></font></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>2）每个测试阶段完成的标准；</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>3）时间进度表；</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>4）每个测试阶段的负责人员；</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>5）测试用例库；</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>6）测试所需的工具；</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>7）每个测试阶段所需机时数等。</b></font><a
+      NAME="HEADING1_0"></p>
+      <p><font FACE="宋体" LANG="ZH-CN"><b>在测试过程中，要对测试的实际情况做好记录，内容包括：</b></font></p>
+    </blockquote>
+    <blockquote>
+      <p><font face="宋体" lang="ZH-CN"><b>1）发现的错误；</b></font></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>2）纠错时对系统作的修改；</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>3）退化测试情况；</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>4）错误原因、类型、比率的分析和统计。</b></font><a
+      NAME="HEADING1_0"></p>
+      <p><font face="宋体" lang="ZH-CN"><b>测试发现错误的迹象后，就要进行排错：</b></font></p>
+    </blockquote>
+    <blockquote>
+      <p><font face="宋体" lang="ZH-CN"><b>1）确定错误的准确性质和位置；</b></font></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>2）纠正错误。</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font face="宋体" lang="ZH-CN"><b>排错是软件开发过程中最困难的一种活动。</b></font><a
+      NAME="HEADING1_0"></p>
+    </blockquote>
+    <p></a><a NAME="HEADING1_0"></td>
+  </tr>
+  <tr>
+    <td WIDTH="81%" VALIGN="TOP" COLSPAN="2"><font FACE="System" LANG="ZH-CN"><p
+    ALIGN="CENTER"></font></a><a href="603.html"><img
+    SRC="leftarrow.gif" BORDER="0" WIDTH="80" HEIGHT="40"></a><a
+    HREF="index.htm"><img SRC="uparrow.gif" BORDER="0" WIDTH="80"
+    HEIGHT="40"></a><a href="605.html"><img SRC="rightarrow.gif"
+    BORDER="0" WIDTH="80" HEIGHT="40"></a></td>
+  </tr>
+</table>
+</body>
+</html>

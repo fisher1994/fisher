@@ -1,0 +1,111 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb_2312-80">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<meta NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+<title>603</title>
+</head>
+
+<body LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff" alink="#ff0000">
+
+<table CELLSPACING="0" BORDER="0" WIDTH="696">
+  <tr>
+    <td WIDTH="19%" VALIGN="TOP" ROWSPAN="3" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><img
+    SRC="uestc.jpg" WIDTH="132" HEIGHT="134"></font><a NAME="HEADING1_0"></td>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="86"></td>
+    <td WIDTH="80%" VALIGN="MIDDLE" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><hr>
+    <strong><h1 ALIGN="CENTER">第六章 检验与测试</h1>
+    </strong><hr>
+    </font></td>
+  </tr>
+  <tr>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="552"></td>
+    <td WIDTH="80%" VALIGN="TOP" HEIGHT="552"></a><b><a NAME="HEADING1_0"><font FACE="System"
+    LANG="ZH-CN">6</font><font FACE="黑体" LANG="ZH-CN" SIZE="5">.</font><font FACE="System"
+    LANG="ZH-CN">5</font><font FACE="黑体" LANG="ZH-CN"> </font><font FACE="宋体"
+    LANG="ZH-CN">黑盒法<dir>
+      <p>不管程序内部逻辑，仅根据程序的功能说明来设计测试用例。</p>
+      <p></a>黑盒法有以下几种：<a NAME="HEADING1_0"></p>
+    </dir>
+    <ul>
+      <ul>
+        <li></a>等价分类法。<a NAME="HEADING1_0"></li>
+        <li></a>边缘值分析法。<a NAME="HEADING1_0"></li>
+        </font></b>
+        <li></a><font FACE="宋体" LANG="ZH-CN"><b>因果图法。</b></font><a NAME="HEADING1_0"></li>
+        <li></a><font FACE="宋体" LANG="ZH-CN"><b>错误推测法。</b></font><a
+          NAME="HEADING1_0"></li>
+      </ul>
+    </ul>
+    <font FACE="宋体" LANG="ZH-CN"><b><dir>
+      <p>1. 
+      等价分类法：将输入数据的可能值分成若干“等价类”，每类中取一个代表性的值。步骤如下：</p>
+    </dir>
+    <ul>
+      <ul>
+        <li></a>划分等价类：找出程序的输入条件，为每个输入条件划分出两个或以上等价类：包括合理与不合理等价类。（P.157）<a
+          NAME="HEADING1_0"></li>
+        </b></font>
+        <li></a><font FACE="宋体" LANG="ZH-CN"><b>选择测试用例，可分三步进行：</b></font><a
+          NAME="HEADING1_0"></li>
+      </ul>
+    </ul>
+    <blockquote>
+      </a><blockquote>
+        <p><font FACE="宋体" LANG="ZH-CN"><b>1）为每个等价类编号；<br>
+        2）设计测试用例使之尽可能包括最多的尚未被其它测试用例包括的合理等价类，重复下去直到所有合理等价类全部被包括；<br>
+        3）设计测试用例使之包括恰好一个尚未被包括的不合理等价类，重复下去直到所有的不合理等价类已被包括。</b></font><a
+        NAME="HEADING1_0"></p>
+        </a>
+      </blockquote>
+      <p><font FACE="宋体" LANG="ZH-CN"><b>例子（表6.6） </b></font></p>
+      <a NAME="HEADING1_0">
+    </blockquote>
+    <ul>
+      <font FACE="宋体" LANG="ZH-CN"><b><p>2. 
+      边缘值分析法：检查系统在输入或输出等价类的边界上的情况。</p>
+      <blockquote>
+        <p></a>与等价分类法比较：<a NAME="HEADING1_0"></p>
+        <p></a>等价分类法只考虑输入条件，<a NAME="HEADING1_0">边缘值分析法</a>同时考虑输入和输出条件；等价分类法从等价类中任选一个测试用例，<a
+        NAME="HEADING1_0">边缘值分析法从等价类的边界周围选择测试用例。例如：</p>
+      </blockquote>
+      <ul>
+        <li></a>考虑值的范围：检查恰好取到边界值的例子（合理输入）和刚刚超过边界值的例子（不合理输入）；<a
+          NAME="HEADING1_0"></li>
+        <li></a>考虑输入及输出数据个数：检查最小及最大个数（合理输入）和最小个数－1及最大个数＋1的情况（不合理输入）；<a
+          NAME="HEADING1_0"></li>
+        <li></a>对于有序集合：重点检查集合的头和尾的情况。<a NAME="HEADING1_0"></li>
+      </ul>
+      </b></font>
+    </ul>
+    </a><blockquote>
+      <p><font FACE="宋体" LANG="ZH-CN"><b>例子（P.161-162） </b></font></p>
+    </blockquote>
+    <ul>
+      <font FACE="宋体" LANG="ZH-CN"><b><a NAME="HEADING1_0"><p>3. 因果图法</p>
+      <p></a>重点检查输入条件的各种组合，利用判定表找出输入（因）与输出（果）的对应关系，为判定表中每一列设计一个或几个测试用例。<a
+      NAME="HEADING1_0"></p>
+      <p>例子（</a>P.55<a NAME="HEADING1_0">）</p>
+      <p>4. 错误推测法</p>
+      <p></a>根据经验，为容易出错的情况设计测试用例。<a NAME="HEADING1_0"></p>
+      <p>例子（</a>P.163<a NAME="HEADING1_0">）</p>
+      <p>5．综合策略</p>
+      </b></font><p></a><font FACE="宋体" LANG="ZH-CN"><b>评审，白盒法，黑盒法</b></font><a
+      NAME="HEADING1_0"></p>
+      <p></a><font FACE="宋体" LANG="ZH-CN"><b>例：黑盒法(边缘值分析和错误推测法)测试BONUS程序（图6.12）</b></font><a
+      NAME="HEADING1_0"></p>
+      </a>
+    </ul>
+    <a NAME="HEADING1_0"><p></a><a NAME="HEADING1_0"></td>
+  </tr>
+  <tr>
+    <td WIDTH="81%" VALIGN="TOP" COLSPAN="2"><font FACE="System" LANG="ZH-CN"><p
+    ALIGN="CENTER"></font></a><a href="602.html"><img SRC="leftarrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a><a HREF="index.htm"><img SRC="uparrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a><a href="604.html"><img SRC="rightarrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a></td>
+  </tr>
+</table>
+</body>
+</html>

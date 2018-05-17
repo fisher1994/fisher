@@ -1,0 +1,141 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb_2312-80">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>405</title>
+<meta NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</head>
+
+<body LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff" alink="#ff0000">
+
+<table CELLSPACING="0" BORDER="0" WIDTH="696">
+  <tr>
+    <td WIDTH="19%" VALIGN="TOP" ROWSPAN="3" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><img
+    SRC="uestc.jpg" WIDTH="128" HEIGHT="124"></font><a NAME="HEADING1_0"></td>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="86"></td>
+    <td WIDTH="80%" VALIGN="MIDDLE" HEIGHT="86"><font FACE="System" LANG="ZH-CN"><hr>
+    <strong><h1 ALIGN="CENTER">第四章 设计方法</h1>
+    </strong><hr>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="1%" VALIGN="TOP" HEIGHT="552"></td>
+    <td WIDTH="80%" VALIGN="TOP" HEIGHT="552"><b><font FACE="System" LANG="ZH-CN">4</font><font
+    FACE="黑体" LANG="ZH-CN" SIZE="5">.</font><font FACE="System" LANG="ZH-CN">6</font><font
+    FACE="黑体" LANG="ZH-CN"> </font><font FACE="宋体" LANG="ZH-CN">导出初始模块结构图<dir>
+      <p>2. 事务分析<dir>
+        <dir>
+          <p>事务型结构：</p>
+        </dir>
+      </dir>
+    </dir>
+    <ul>
+      <ul>
+        <li>事务型结构系统的数据流图： </li>
+      </ul>
+    </ul>
+    <dir>
+      <dir>
+        <dir>
+          </font></b><font FACE="System" LANG="ZH-CN"><p><img SRC="事务结构.gif" WIDTH="482"
+          HEIGHT="205"></p>
+        </dir>
+      </dir>
+    </dir>
+    <ul>
+      <ul>
+        </font><font FACE="宋体" LANG="ZH-CN"><b>
+        <li>对应着变换型结构系统主加工的位置，事务型结构由若干平行的加工构成，系统选择执行其中的某个(或某些)加工。 
+        </li>
+      </ul>
+    </ul>
+    <dir>
+      <dir>
+        <dir>
+          <p>用事务分析方法设计模块结构图：</p>
+        </dir>
+      </dir>
+    </dir>
+    <ul>
+      <ul>
+        <li>顶层：为主加工设计一个主模块，功能是整个系统的功能； </li>
+        <li>一层：</li>
+        <dir>
+          <dir>
+            <ul>
+              <li>为逻辑输入中的每一个输入数据流设计一个输入模块，功能是向主模块提供数据； 
+              </li>
+              <li>为逻辑输出中的每一个输出数据流设计一个输出模块，功能是为主模块提供输出通道； 
+              </li>
+              <li>为每种类型的事务设计一个事务处理模块（变换模块）。</li>
+            </ul>
+          </dir>
+        </dir>
+        <li>二层及以下：与变换分析类似。（图4.43）</li>
+      </ul>
+    </ul>
+    <dir>
+      <dir>
+        <dir>
+          <p>几点补充：</p>
+        </dir>
+      </dir>
+    </dir>
+    <ul>
+      <dir>
+        <dir>
+          <dir>
+            <dir>
+              <ul>
+                <li>实际应用中系统通常是两种类型的混合结构，需要以变换分析为主、事务分析为辅进行设计；（图4.44） 
+                </li>
+                <li>程序结构与问题结构相对应； </li>
+                <li>在多任务的环境下,将系统中可以并行处理的部分设计成许多任务,彼此间用通讯方式进行联系.</li>
+              </ul>
+            </dir>
+          </dir>
+        </dir>
+      </dir>
+    </ul>
+    <dir>
+      <p>3．实例：银行文件管理系统＿分析与设计<dir>
+        <dir>
+          <p>需求分析（SA）：</p>
+        </dir>
+      </dir>
+    </dir>
+    <ul>
+      <ul>
+        <li>贷款文件由许多纪录组成，每条纪录有14个字段（数据项），数据项的定义见表4.5，贷款文件按第一个字段（帐号）递增排列；</li>
+        <li>修改贷款文件纪录的信息按规定的格式写在卡片上，修改卡片也按帐号递增顺序排列；</li>
+        <li>加工逻辑：系统一次读入设定数目的修改卡片，检查卡片的顺序和上面的修改信息格式是否正确，然后找到文件中需要修改的纪录进行修改，产生新文件和修改纪录。</li>
+        <li>系统的分层数据流图：（图4.45、图4.46、图4.47）</li>
+      </ul>
+    </ul>
+    <dir>
+      <dir>
+        <dir>
+          <p>概要设计（SD）：</p>
+        </dir>
+      </dir>
+    </dir>
+    <ul>
+      <ul>
+        <li>用变换分析技术设计系统模块结构图；（图4.48、图4.49）</li>
+        <li>用事务分析技术进一步对系统局部（编辑卡片）模块进行设计（图4.50）</li>
+        <li>对系统的事务型结构部分的模块图进行改进(消除重复功能)（图4.52、图4.53）</b></font></li>
+      </ul>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="81%" VALIGN="TOP" COLSPAN="2"><font FACE="System" LANG="ZH-CN"><p
+    ALIGN="CENTER"></font></a><a HREF="404.html"><img SRC="leftarrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a><a HREF="index.htm"><img SRC="uparrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a><a HREF="406.html"><img SRC="rightarrow.gif" BORDER="0"
+    WIDTH="80" HEIGHT="40"></a></td>
+  </tr>
+</table>
+</body>
+</html>

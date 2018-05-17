@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb_2312-80">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>403</TITLE>
+<META NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff" alink="#ff0000">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=696>
+<TR><TD WIDTH="19%" VALIGN="TOP" ROWSPAN=3 HEIGHT=86>
+<FONT FACE="System" LANG="ZH-CN"><P><IMG SRC="uestc.jpg" WIDTH=128 HEIGHT=124><A NAME="HEADING1_0"></FONT></TD>
+<TD WIDTH="1%" VALIGN="TOP" HEIGHT=86><P></P></TD>
+<TD WIDTH="80%" VALIGN="MIDDLE" HEIGHT=86>
+<FONT FACE="System" LANG="ZH-CN"><P><HR></P>
+<STRONG><H1 ALIGN="CENTER">第四章 设计方法</H1>
+</STRONG><P><HR></FONT></TD>
+</TR>
+<TR><TD WIDTH="1%" VALIGN="TOP" HEIGHT=552><P></P></TD>
+<TD WIDTH="80%" VALIGN="TOP" HEIGHT=552>
+<B><FONT FACE="System" LANG="ZH-CN"><P>4</FONT><FONT FACE="黑体" LANG="ZH-CN" SIZE=5>.</FONT><FONT FACE="System" LANG="ZH-CN">4</FONT><FONT FACE="黑体" LANG="ZH-CN"> </FONT><FONT FACE="宋体" LANG="ZH-CN">块间联系与块内联系</P>
+<OL>
+
+<LI>块间联系的各种类型：</LI></OL>
+
+
+<UL>
+
+<UL>
+<LI>按块间联系的方式可分为直接引用与过程调用； </LI>
+<LI>按块间共用信息的作用可分为数据型、控制型与混合型； </LI>
+<LI>按块间共用的信息数量分</FONT><FONT FACE="System" LANG="ZH-CN"> </LI></UL>
+</UL>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="宋体" LANG="ZH-CN"><P>块间联系的另一种分类法（由大到小）：</P></DIR>
+</DIR>
+
+
+<UL>
+
+<UL>
+<LI>内容型：直接引用另一模块的内部信息； </LI>
+<LI>公共型：两个模块引用共同的全程数据区； </LI>
+<LI>控制型：模块间传送的信息用于控制模块的内部逻辑； </LI>
+<LI>复合型：模块间传送复合的数据结构； </LI>
+<LI>数据型：模块间传送单个数据项。</LI></UL>
+</UL>
+
+<OL>
+
+<LI>块内联系的各种类型（从小到大）：</LI></OL>
+
+
+<UL>
+
+<UL>
+<LI>偶然型：模块内部沒有必然联系； </LI>
+<LI>逻辑型：逻辑上相似的功能放进一个模块； </LI>
+<LI>瞬时型：将同时执行的语句放在一个模块； </LI>
+<LI>通讯型：模块中的各部分引用共同的数据； </LI>
+<LI>顺序型：模块中一部分的输出是另一部分的收入； </LI>
+<LI>功能型： 模块中刚好包含了完成一个基本任务所必需的成分。</LI></UL>
+</UL>
+
+<OL>
+
+<LI>SD方法的设计总则：</LI></OL>
+
+
+<UL>
+
+<UL>
+<LI>每个模块执行一个功能； </LI>
+<LI>模块间传送数据型参数； </LI>
+<LI>模块间共用信息尽量少。</LI></UL>
+</UL>
+
+<OL>
+
+<LI>设计质量的度量模型：</LI></OL>
+
+
+<UL>
+
+<UL>
+</FONT><I><FONT FACE="Arial Rounded MT Bold"><LI>M=(m<SUB>ij</SUB>)</FONT><SUB><FONT FACE="Arial Rounded MT Bold" SIZE=4>nxn </I></SUB></FONT><FONT FACE="宋体" LANG="ZH-CN"> 完全依赖矩阵,其中</FONT><I><FONT FACE="Arial Rounded MT Bold">n </I></FONT><FONT FACE="宋体" LANG="ZH-CN">是模块个数，元素</FONT><I><FONT FACE="Arial Rounded MT Bold">m<SUB>ij </I></SUB></FONT><FONT FACE="宋体" LANG="ZH-CN">是模块</FONT><FONT FACE="Arial Rounded MT Bold">i</FONT><FONT FACE="宋体" LANG="ZH-CN">与</FONT><FONT FACE="Arial Rounded MT Bold">j</FONT><FONT FACE="宋体" LANG="ZH-CN">的相关系数，即改动模块</FONT><FONT FACE="Arial Rounded MT Bold">i</FONT><FONT FACE="宋体" LANG="ZH-CN">时需同时改动模块</FONT><FONT FACE="Arial Rounded MT Bold">j</FONT><FONT FACE="宋体" LANG="ZH-CN">的概率。</LI>
+</FONT><I><FONT FACE="Arial Rounded MT Bold"><LI>E=<FONT FACE="Symbol">&#229;</FONT>
+(m<SUB>ij</SUB>)/n</FONT><FONT FACE="宋体" LANG="ZH-CN">，</I>平均修改数目，反映了模块之间总的相互依赖程度。</LI>
+<LI>第</FONT><FONT FACE="Arial Rounded MT Bold">i</FONT><FONT FACE="宋体" LANG="ZH-CN">行元素相加</FONT><FONT FACE="Arial Rounded MT Bold">,</FONT><FONT FACE="宋体" LANG="ZH-CN">代表修改模块</FONT><FONT FACE="Arial Rounded MT Bold">i</FONT><FONT FACE="宋体" LANG="ZH-CN">时涉及到的模块个数平均值。</LI></UL>
+</UL>
+<DIR>
+
+</B></FONT><FONT FACE="System" LANG="ZH-CN"><P>　</DIR>
+</FONT></TD>
+</TR>
+<TR><TD WIDTH="81%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="System" LANG="ZH-CN"><P ALIGN="CENTER"></A></FONT><A HREF="402.html"><IMG SRC="leftarrow.gif" BORDER=0 WIDTH=80 HEIGHT=40></A><A HREF="index.htm"><IMG SRC="uparrow.gif" BORDER=0 WIDTH=80 HEIGHT=40></A><A HREF="404.html"><IMG SRC="rightarrow.gif" BORDER=0 WIDTH=80 HEIGHT=40></A></TD>
+</TR>
+</TABLE>
+
+<FONT FACE="System" LANG="ZH-CN"></FONT></BODY>
+</HTML>

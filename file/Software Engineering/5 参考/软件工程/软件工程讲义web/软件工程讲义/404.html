@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb_2312-80">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>404</TITLE>
+<META NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff" alink="#ff0000">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=696>
+<TR><TD WIDTH="19%" VALIGN="TOP" ROWSPAN=3 HEIGHT=86>
+<FONT FACE="System" LANG="ZH-CN"><P><IMG SRC="uestc.jpg" WIDTH=128 HEIGHT=124><A NAME="HEADING1_0"></FONT></TD>
+<TD WIDTH="1%" VALIGN="TOP" HEIGHT=86><P></P></TD>
+<TD WIDTH="80%" VALIGN="MIDDLE" HEIGHT=86>
+<FONT FACE="System" LANG="ZH-CN"><P><HR></P>
+<STRONG><H1 ALIGN="CENTER">第四章 设计方法</H1>
+</STRONG><P><HR></FONT></TD>
+</TR>
+<TR><TD WIDTH="1%" VALIGN="TOP" HEIGHT=552><P></P></TD>
+<TD WIDTH="80%" VALIGN="TOP" HEIGHT=552>
+<B><FONT FACE="System" LANG="ZH-CN"><P>4</FONT><FONT FACE="黑体" LANG="ZH-CN" SIZE=5>.</FONT><FONT FACE="System" LANG="ZH-CN">6</FONT><FONT FACE="黑体" LANG="ZH-CN"> </FONT><FONT FACE="宋体" LANG="ZH-CN">导出初始模块结构图</P>
+<OL>
+
+<LI>变换分析</LI></OL>
+<DIR>
+<DIR>
+<DIR>
+
+<P>变换型结构：</P></DIR>
+</DIR>
+</DIR>
+
+
+<UL>
+
+<UL>
+<LI>变换型结构系统的数据流图： </LI></UL>
+</UL>
+<DIR>
+<DIR>
+<DIR>
+
+</B></FONT><FONT FACE="System" LANG="ZH-CN"><P ALIGN="CENTER"><IMG SRC="变换结构.gif" WIDTH=304 HEIGHT=78></P></DIR>
+</DIR>
+</DIR>
+
+
+<UL>
+
+<UL>
+</FONT><B><FONT FACE="宋体" LANG="ZH-CN"><LI>找主加工：通常位于系统中几股数据流的汇合处； </LI>
+<LI>确定逻辑输入：离物理输入端最远的、仍属于系统输入的数据流； </LI>
+<LI>确定逻辑输出：离物理输出端最远的、仍属于系统输出的数据流； </LI>
+<LI>有些系统可能没有主加工部分。</LI></UL>
+</UL>
+<DIR>
+<DIR>
+<DIR>
+
+<P>用变换分析方法设计模块结构图：</P></DIR>
+</DIR>
+</DIR>
+
+
+<UL>
+
+<UL>
+<LI>顶层：为主加工设计一个主模块，功能是整个系统的功能； </LI>
+<LI>一层：</LI><DIR>
+<DIR>
+
+
+<UL>
+<LI>为逻辑输入中的每一个输入数据流设计一个输入模块，功能是向主模块提供数据； </LI>
+<LI>为逻辑输出中的每一个输出数据流设计一个输出模块，功能是为主模块提供输出通道； </LI>
+<LI>为主模块设计一个变换模块，功能是将逻辑输入转换为逻辑输出。</LI></UL>
+</DIR>
+</DIR>
+
+<LI>二层及以下：</LI><DIR>
+<DIR>
+
+
+<UL>
+<LI>为上层的每个输入模块设计两个下层模块：一个输入模块和一个变换模块； </LI>
+<LI>为上层的每个输出模块设计两个下层模块：一个变换模块和一个输出模块； </LI>
+<LI>一直分解到系统的物理输入和输出端为止。</LI></UL>
+</DIR>
+</DIR>
+</UL>
+</UL>
+<DIR>
+<DIR>
+<DIR>
+
+<P>几点注意事项：</P></DIR>
+</DIR>
+</DIR>
+
+
+<UL><DIR>
+<DIR>
+<DIR>
+<DIR>
+
+
+<UL>
+<LI>上层的变换模块需不需要设计下层模块，根据数据流图中所对应的加工需不需要分解为子加工而定；(图4.41) </LI>
+<LI>模块的名字要恰当反映模块的功能； </LI>
+<LI>下层模块只和上层的调用模块之间传送数据（即参数），传送的参数应与数据流图中的描述相对应。（图4.40）</UL>
+</DIR>
+</DIR>
+</DIR>
+</DIR>
+</UL>
+</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="81%" VALIGN="TOP" COLSPAN=2>
+<FONT FACE="System" LANG="ZH-CN"><P ALIGN="CENTER"></A></FONT><A HREF="403.html"><IMG SRC="leftarrow.gif" BORDER=0 WIDTH=80 HEIGHT=40></A><A HREF="index.htm"><IMG SRC="uparrow.gif" BORDER=0 WIDTH=80 HEIGHT=40></A><A HREF="405.html"><IMG SRC="rightarrow.gif" BORDER=0 WIDTH=80 HEIGHT=40></A></TD>
+</TR>
+</TABLE>
+
+<FONT FACE="System" LANG="ZH-CN"></FONT></BODY>
+</HTML>
